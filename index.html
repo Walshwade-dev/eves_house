@@ -29,7 +29,7 @@
         <nav class="flex items-center justify-around w-[100%] lg:flex lg:justify-between lg:items-center">
             <h1 class="lg:text-3xl lg:font-bold font-extrabold text-[2rem] mr-auto lg:mr-0">Eve's House</h1>
 
-            <ul class="md:hidden lg:hidden">
+            <ul class="md:mr-4 lg:hidden">
                 <li>
                     <div class="hamburger-menu-icon">
                         <div class="bar1"></div>
@@ -38,7 +38,7 @@
                     </div>
                 </li>
 
-                <ul class="mini-menu absolute h-[120vh] w-[50%] z-40 -left-56 flex flex-col  bg-dullCreme text-creme transition ease-in-out delay-150 duration-300 lg:hidden md:hidden">
+                <ul class="mini-menu absolute h-[120vh] w-[50%] z-40 -left-56 md:-left-[60rem] md:h-[70vh] flex flex-col  bg-dullCreme text-creme transition ease-in-out delay-150 duration-300 lg:hidden">
                     <ul class="mb-auto">
                         <a href="#"><li class="px-2 py-4 border-b-[0.1px] hover:border-[0.2px] hover:border-dullcreme  hover:bg-creme hover:text-dullCreme">MEN</li></a>
                         <a href="#"><li class="px-2 py-4 border-b-[0.1px] hover:border-[0.2px] hover:border-dullcreme  hover:bg-creme hover:text-dullCreme">WOMEN</li></a>
@@ -81,16 +81,16 @@
     </header>
 
     <main class="lg:container mx-auto lg:h-[100%] md:container">
-        <section class="relative home lg:relative lg:mt-16 lg:grid lg:grid-cols-2">
+        <section class="relative home md:grid md:grid-cols-2 lg:relative lg:mt-16 lg:grid lg:grid-cols-2">
             <img src="/assets/Vector.png" alt="a transparent square with gaped wavy lines" class="lg:inline-block hidden vector lg:absolute lg:-left-60 lg:top-10 lg:z-10" />
             <img src="/assets/waves.png" alt="a transparent square with gaped wavy lines" class="lg:inline-block hidden vector lg:absolute lg:left-0 lg:-bottom-4 lg:-z-0" />
-            <div class="lg:py-8">
-                <h2 class="headline px-4 text-4xl leading-[4rem] tracking-wide  lg:font-bold lg:font-serif lg:text-[5rem] lg:tracking-wide lg:leading-snug">Find The Best<br>Fashion Style<br>For You</h2>
+            <div class="lg:py-8 md:relative h-[100%] w-[100%]">
+                <h2 class="headline px-4 text-4xl leading-[4rem] tracking-wide lg:font-bold lg:font-serif lg:text-[5rem] lg:tracking-wide lg:leading-snug">Find The Best<br>Fashion Style<br>For You</h2>
                 <p class="headline-p px-4 my-4 w-[90%] lg:text-xl lg:w-[70%] lg:leading-loose lg:mb-4">
                     Fashion is an adventure, and your journey starts here. 
                     Explore our collection and discover how easy it is to create stunning outfits that reflect your unique personality.
                 </p>
-                <button class="hidden lg:block bg-[#34251f] text-[#EEDDCC] px-12 py-4 lg:ml-4 lg:my-12 font-semibold hero-btn lg:z-40">SHOP NOW</button>
+                <button class="hidden md:absolute md:bottom-4 md:block md:mx-4  lg:block bg-[#34251f] text-[#EEDDCC] px-12 py-4 lg:ml-4 lg:my-12 font-semibold hero-btn lg:z-40">SHOP NOW</button>
             </div>
 
             <div class="">
@@ -99,7 +99,7 @@
                     <img src="/assets/eves.png" alt="eve's portrait" class="hero-img absolute top-2 -left-10 z-20 lg:absolute lg:-left-10 lg:top-2 lg:z-20"/>
                     <img src="/assets/Vector.png" alt="a transparent square with gaped wavy lines" class="vector absolute bottom-4 lg:absolute lg:left-0 lg:bottom-0 lg:z-10" />
                 </div>
-                <button class="lg:hidden mx-4 my-10 bg-[#34251f] text-[#EEDDCC] px-12 py-4 font-semibold hero-btn z-40">SHOP NOW</button>
+                <button class="md:hidden mx-4 my-10 bg-[#34251f] text-[#EEDDCC] px-12 py-4 font-semibold hero-btn z-40">SHOP NOW</button>
             </div>
         </section>
     </main>
