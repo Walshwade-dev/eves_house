@@ -6,7 +6,7 @@ module.exports = {
     colors: {
       creme:"#EEDDCC",
       dullCreme: "#34251f",
-      hoverDullCreme: "#34251fb"
+      hoverDullCreme: "#34251fee"
     }
   },
   plugins: [],

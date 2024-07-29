@@ -679,6 +679,10 @@ video {
   right: 0px;
 }
 
+.right-4 {
+  right: 1rem;
+}
+
 .top-2 {
   top: 0.5rem;
 }
@@ -762,6 +766,11 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -777,6 +786,10 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .box-border {
@@ -1756,6 +1769,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1906,9 +1923,18 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-creme {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 221 204 / var(--tw-bg-opacity));
+}
+
 .bg-dullCreme {
   --tw-bg-opacity: 1;
   background-color: rgb(52 37 31 / var(--tw-bg-opacity));
+}
+
+.bg-hoverDullCreme {
+  background-color: #34251fee;
 }
 
 .bg-gradient-to-r {
@@ -2061,6 +2087,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -2122,6 +2153,15 @@ video {
   vertical-align: super;
 }
 
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -2137,6 +2177,10 @@ video {
 
 .font-extrabold {
   font-weight: 800;
+}
+
+.font-extralight {
+  font-weight: 200;
 }
 
 .font-semibold {
@@ -2228,9 +2272,19 @@ video {
   color: rgb(238 221 204 / var(--tw-text-opacity));
 }
 
+.text-\[cyan\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 255 255 / var(--tw-text-opacity));
+}
+
 .text-creme {
   --tw-text-opacity: 1;
   color: rgb(238 221 204 / var(--tw-text-opacity));
+}
+
+.text-dullCreme {
+  --tw-text-opacity: 1;
+  color: rgb(52 37 31 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2678,6 +2732,48 @@ body, html {
 
 /* mini menu */
 
+/* login modal*/
+
+.login-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+  text-align: center;
+  width: 90%;
+  z-index: 9999;
+}
+
+.login-modal form label {
+  all: unset;
+  color: var(--primary-background-color);
+  margin-bottom: -1rem;
+}
+
+#password, #email {
+  all: unset;
+  background-color: var(--primary-background-color);
+  color: #34251F;
+  text-align: left;
+  text-indent: 16px;
+  padding: 0.5rem 0;
+  width: 80%;
+  border-radius: 0.5rem;
+}
+
+#password::-moz-placeholder, #email::-moz-placeholder{
+  all: unset;
+  color: #34251F;
+}
+
+#password::placeholder, #email::placeholder{
+  all: unset;
+  color: #34251F;
+}
+
+/* login modal*/
+
 .headline {
   font-family: "Frank Ruhl Libre", serif;
   font-weight: 700;
@@ -2861,20 +2957,12 @@ body, html {
     position: relative;
   }
 
-  .md\:-left-\[40rem\] {
-    left: -40rem;
+  .md\:-left-\[60rem\] {
+    left: -60rem;
   }
 
   .md\:bottom-4 {
     bottom: 1rem;
-  }
-
-  .md\:-left-\[0rem\] {
-    left: -0rem;
-  }
-
-  .md\:-left-\[60rem\] {
-    left: -60rem;
   }
 
   .md\:mx-4 {
@@ -3165,3 +3253,4 @@ body, html {
     }
   }
 }
+

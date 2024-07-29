@@ -72,6 +72,41 @@ body, html {
 }
 /* mini menu */
 
+/* login modal*/
+.login-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 90%;
+    z-index: 9999;
+}
+
+.login-modal form label {
+    all: unset;
+    color: var(--primary-background-color);
+    margin-bottom: -1rem;
+}
+
+#password, #email {
+    all: unset;
+    background-color: var(--primary-background-color);
+    color: #34251F;
+    text-align: left;
+    text-indent: 16px;
+    padding: 0.5rem 0;
+    width: 80%;
+    border-radius: 0.5rem;
+}
+
+#password::placeholder, #email::placeholder{
+    all: unset;
+    color: #34251F;
+}
+
+/* login modal*/
 
 .headline {
     font-family: "Frank Ruhl Libre", serif;
@@ -92,3 +127,4 @@ body, html {
     color: #ffffffb7;
     filter: drop-shadow(1px 1px 2px #34251fb7);
 }
+

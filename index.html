@@ -58,7 +58,7 @@
                         <a href="#">
                             <li class="px-2 py-4 border-b-[0.1px] hover:bg-creme hover:text-dullCreme hover:border-[0.2px] hover:border-dullcreme">
                                 <i class="fa-regular fa-right-to-bracket hover:text-dullCreme"></i>
-                                <Button>Login</Button>
+                                <Button id="login-btn">Login</Button>
                             </li>
                         </a>
                     </ul>
@@ -80,7 +80,35 @@
         </nav>
     </header>
 
-    <main class="lg:container mx-auto lg:h-[100%] md:container">
+    <main class="main lg:container mx-auto lg:h-[100%] md:container">
+        <!-- login modal start -->
+         <div class="login-modal text-creme bg-hoverDullCreme py-10 px-5 hidden">
+            <span class="fixed top-2 right-4 font-bold font-mono" id="close-modal-btn">X</span>
+            <h2 class="font-bold text-3xl">Hello there </h2>
+            <h4 class="font-semibold">Welcome! Please enter your details.</h4>
+            <form class="flex flex-col items-start mt-4">
+                <label for="email">Email</label><br>
+                <input id="email" type="email" name="user-email" placeholder="enter your email" required /><br>
+
+                <label for="password">Password</label><br>
+                <input id="password" type="password" name="user-password" placeholder="*********" required /><br>
+
+                <div class="flex flex-col">
+                    <span class="my-2">
+                        <input type="checkbox" id="checkbox" name="user-checkbox">
+                        <label for="checkbox">Remember me</label>
+                    </span>
+
+                    <span><a href="#"> Forgot password</a></span>
+                </div>
+
+                <button type="submit" id="sign-in-btn" class="text-center px-auto py-4 bg-creme text-dullCreme w-[100%] rounded-lg my-2">Sign in</button>
+                <button type="submit" id="sign-in-with-google-btn " class="text-center px-auto py-4 bg-creme text-dullCreme w-[100%] rounded-lg my-2">Sign in with Google</button>
+            </form>
+            <p>Don't have an account?<span class="text-[cyan] font-extralight"><a href="#"> Sign up</a></span></p>
+         </div>
+        <!-- login modal end -->
+
         <section class="relative home md:grid md:grid-cols-2 lg:relative lg:mt-16 lg:grid lg:grid-cols-2">
             <img src="/assets/Vector.png" alt="a transparent square with gaped wavy lines" class="lg:inline-block hidden vector lg:absolute lg:-left-60 lg:top-10 lg:z-10" />
             <img src="/assets/waves.png" alt="a transparent square with gaped wavy lines" class="lg:inline-block hidden vector lg:absolute lg:left-0 lg:-bottom-4 lg:-z-0" />
