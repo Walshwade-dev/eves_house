@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-background-color: #EEDDCC;
+    --text-color: #34251F;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+body, html {
+    background-color: var(--primary-background-color);
+    color: var(--text-color);
+}
+
+/* hamburger icon */
+.hamburger-menu-icon {
+    height: 3rem;
+    width: 3rem;
+    margin: 0 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.hamburger-menu-icon .bar1, .bar2, .bar3 {
+    width: 3rem;
+    height: .4rem;
+    background-image: linear-gradient(to right, var(--text-color), var(--primary-background-color));
+    border: 1px solid;
+    border-image: linear-gradient(to left, var(--text-color), var(--primary-background-color));
+    border-radius: 0.4rem;
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu-icon.open .bar1 {
+    border: none;
+    transform: rotate(-45deg) translate(-0.5rem, 0.6rem);
+}
+
+.hamburger-menu-icon.open .bar2 {
+    opacity: 0;
+}
+
+.hamburger-menu-icon.open .bar3 {
+    border: none;
+    transform: rotate(45deg) translate(-0.5rem, -0.6rem);
+}
+
+/* hamburger icon end */
+
+
+/* mini menu */
+.mini-menu {
+    transition: 0.5s ease-in-out;
+}
+
+.mini-menu.show {
+    transition: 0.5s ease-in-out;
+    left: 0;
+}
+/* mini menu */
+
+
+.headline {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 700;
+}
+
+.headline-p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.hero-btn {
+    filter: drop-shadow(3px 15px 30px #34251f);
+}
+
+.hero-btn:hover {
+    background: #34251Fb3;
+    color: #ffffffb7;
+    filter: drop-shadow(1px 1px 2px #34251fb7);
+}
