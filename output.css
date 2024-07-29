@@ -878,8 +878,8 @@ video {
   display: none;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
+.h-\[120vh\] {
+  height: 120vh;
 }
 
 .h-\[5rem\] {
@@ -888,10 +888,6 @@ video {
 
 .h-\[60vh\] {
   height: 60vh;
-}
-
-.h-\[120vh\] {
-  height: 120vh;
 }
 
 .w-\[100\%\] {
@@ -2633,7 +2629,7 @@ body, html {
 .hamburger-menu-icon {
   height: 3rem;
   width: 3rem;
-  margin: 0 1rem 0 0;
+  margin: 0 -0.2rem 0 0;
   display: flex;
   justify-content: center;
   flex-direction: column;

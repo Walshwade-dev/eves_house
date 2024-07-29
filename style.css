@@ -28,7 +28,7 @@ body, html {
 .hamburger-menu-icon {
     height: 3rem;
     width: 3rem;
-    margin: 0 1rem 0 0;
+    margin: 0 -0.2rem 0 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
