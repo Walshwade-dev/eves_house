@@ -1,6 +1,7 @@
 const hamburgerEl = document.querySelector('.hamburger-menu-icon');
 const miniMenuEl = document.querySelector('.mini-menu')
 const mainEl = document.querySelector(".main");
+const lgLoginBtn = document.querySelector('.lg-login-btn');
 const loginBtn = document.getElementById('login-btn');
 const loginModalEL = document.querySelector(".login-modal")
 const closeModalBtn  = document.querySelector("#close-modal-btn");
@@ -47,4 +48,6 @@ function login() {
         })
     }
 }
+
 loginBtn.addEventListener('click', () => {login()});
+lgLoginBtn.addEventListener('click', () => {login()});

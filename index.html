@@ -75,37 +75,46 @@
 
             <ul class="lg:flex lg:gap-8 lg:list-none lg:items-center hidden">
                 <li class=""><i class="lg:px-2 lg:py-1 fa-regular fa-cart-shopping hover:fa-thin lg:hover:fa-car-shopping cursor-pointer" style="color: #34251f;"></i></li>
-                <li><button class="lg:hover:text-[#34251fb6] lg:px-8 lg:py-2  lg:border-[0.1rem] lg:border-[#34251f] lg:hover:border-[#34251fb6] login-btn">login</button></li>
+                <li><button class="lg:hover:text-[#34251fb6] lg:px-8 lg:py-2  lg:border-[0.1rem] lg:border-[#34251f] lg:hover:border-[#34251fb6] lg-login-btn">login</button></li>
             </ul>
         </nav>
     </header>
 
     <main class="main lg:container mx-auto lg:h-[100%] md:container">
         <!-- login modal start -->
-         <div class="login-modal text-creme bg-hoverDullCreme py-10 px-5 hidden">
-            <span class="fixed top-2 right-4 font-bold font-mono" id="close-modal-btn">X</span>
+         <div class="login-modal text-creme bg-hoverDullCreme py-10 px-5 lg:w-[50%] lg:z-50 hidden">
+            <span class="fixed top-2 right-4 font-bold font-mono lg:text-3xl lg:top4 lg:right-6 cursor-pointer" id="close-modal-btn">X</span>
             <h2 class="font-bold text-3xl">Hello there </h2>
             <h4 class="font-semibold">Welcome! Please enter your details.</h4>
-            <form class="flex flex-col items-start mt-4">
-                <label for="email">Email</label><br>
-                <input id="email" type="email" name="user-email" placeholder="enter your email" required /><br>
-
-                <label for="password">Password</label><br>
-                <input id="password" type="password" name="user-password" placeholder="*********" required /><br>
-
-                <div class="flex flex-col">
-                    <span class="my-2">
-                        <input type="checkbox" id="checkbox" name="user-checkbox">
-                        <label for="checkbox">Remember me</label>
-                    </span>
-
-                    <span><a href="#"> Forgot password</a></span>
+            
+            <div class="lg:grid lg:grid-cols-2 ">
+                <div class="login-form-container">
+                    <form class="flex flex-col items-start mt-4">
+                        <label for="email">Email</label><br>
+                        <input id="email" type="email" name="user-email" placeholder="enter your email" required /><br>
+        
+                        <label for="password">Password</label><br>
+                        <input id="password" type="password" name="user-password" placeholder="*********" required /><br>
+        
+                        <div class="flex flex-col">
+                            <span class="my-2">
+                                <input type="checkbox" id="checkbox" name="user-checkbox">
+                                <label for="checkbox">Remember me</label>
+                            </span>
+        
+                            <span><a href="#"> Forgot password</a></span>
+                        </div>
+        
+                        <button type="submit" id="sign-in-btn" class="text-center px-auto py-4 bg-creme text-dullCreme w-[100%] rounded-lg my-2 lg:w-[80%]">Sign in</button>
+                        <button type="submit" id="sign-in-with-google-btn " class="text-center px-auto py-4 bg-creme text-dullCreme w-[100%] rounded-lg my-2 lg:w-[80%]">Sign in with Google</button>
+                    </form>
+                    <p class="lg:w-[80%]">Don't have an account?<span class="text-[cyan] font-extralight"><a href="#"> Sign up</a></span></p>
                 </div>
+                <div class="login-form-image-container hidden lg:flex lg:mt-4 lg:w-[100%] lg:h-[100%] lg:items-center lg:-ml-5">
+                    <img src="./assets/genz.jpg" alt="african young woman's as a face of protesting for equality and fairness" class="modal-img hidden lg:inline-block lg:h-[80%]" />
+                </div>
+            </div>
 
-                <button type="submit" id="sign-in-btn" class="text-center px-auto py-4 bg-creme text-dullCreme w-[100%] rounded-lg my-2">Sign in</button>
-                <button type="submit" id="sign-in-with-google-btn " class="text-center px-auto py-4 bg-creme text-dullCreme w-[100%] rounded-lg my-2">Sign in with Google</button>
-            </form>
-            <p>Don't have an account?<span class="text-[cyan] font-extralight"><a href="#"> Sign up</a></span></p>
          </div>
         <!-- login modal end -->
 
@@ -118,16 +127,16 @@
                     Fashion is an adventure, and your journey starts here. 
                     Explore our collection and discover how easy it is to create stunning outfits that reflect your unique personality.
                 </p>
-                <button class="hidden md:absolute md:bottom-4 md:block md:mx-4  lg:block bg-[#34251f] text-[#EEDDCC] px-12 py-4 lg:ml-4 lg:my-12 font-semibold hero-btn lg:z-40">SHOP NOW</button>
+                <button class="hidden md:absolute md:bottom-4 md:block md:mx-4  lg:block bg-[#34251f] text-[#EEDDCC] px-12 py-4 lg:ml-4 lg:my-12 font-semibold hero-btn lg:z-30">SHOP NOW</button>
             </div>
 
             <div class="">
-                <div class="h-[60vh] w-[90%] mx-4 rounded-tr-[10rem] rounded-bl-[10rem] relative lg:relative img-container bg-gradient-to-r from-[#D3A17E] lg:w-[60%] lg:h-[80%] lg:mx-auto lg:my-8 lg:rounded-bl-[10rem]">
+                <div class="h-[60vh] w-[90%] mx-4 rounded-tr-[10rem] rounded-bl-[10rem] relative lg:relative img-container bg-gradient-to-r from-[#D3A17E] lg:w-[60%] lg:h-[70vh] lg:mx-auto lg:my-8 lg:rounded-bl-[10rem]">
                     <img src="/assets/Vector.png" alt="a transparent square with gaped wavy lines" class="vector absolute right-0 top-20 lg:absolute lg:right-0 lg:top-24 lg:z-10" />
                     <img src="/assets/eves.png" alt="eve's portrait" class="hero-img absolute top-2 -left-10 z-20 lg:absolute lg:-left-10 lg:top-2 lg:z-20"/>
                     <img src="/assets/Vector.png" alt="a transparent square with gaped wavy lines" class="vector absolute bottom-4 lg:absolute lg:left-0 lg:bottom-0 lg:z-10" />
                 </div>
-                <button class="md:hidden mx-4 my-10 bg-[#34251f] text-[#EEDDCC] px-12 py-4 font-semibold hero-btn z-40">SHOP NOW</button>
+                <button class="md:hidden mx-4 my-10 m bg-[#34251f] text-[#EEDDCC] px-12 py-4 font-semibold hero-btn z-40">SHOP NOW</button>
             </div>
         </section>
     </main>
